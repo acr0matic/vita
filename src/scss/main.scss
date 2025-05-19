@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "sass:color";
+@use "sass:math";
+
+@import "abstracts/main";
+
+@import "vendors/include/main";
+
+@import "common/reset";
+@import "common/base";
+@import "common/misc";
+
+@import "settings/breakpoint";
+@import "settings/container";
+@import "settings/vars";
+@import "settings/fonts";
+
+@import "vendors/override/main";
+@import "vendors/extend/main";
+
+/* ПОРЯДОК ПОДКЛЮЧЕНИЙ ВЫШЕ МЕНЯТЬ ТОЛЬКО ПРИ ОСОБОЙ НЕОБХОДИМОСТИ */
+
+@import "layout/components/main";
+
+/* Глобальные стили */
+@import "layout/global/page";
+@import "layout/global/header";
+@import "layout/global/breadcrumbs";
+@import "layout/global/nav";
+@import "layout/global/footer";
+@import "layout/global/mobile";
+@import "layout/global/page-header";
+@import "layout/global/section";
+
+/* Стили для узконаправленных тегов */
+@import "layout/misc/image";
+@import "layout/misc/link";
+@import "layout/misc/logo";
+@import "layout/misc/social";
+@import "layout/misc/media-wrapper";
+
+/* Стили для повторяющихся блоков */
+@import "layout/partials/main";
+
+/* Стили для шаблонов страниц, подключать новые фрагменты только в _main.scss */
+@import "layout/pages/main";
