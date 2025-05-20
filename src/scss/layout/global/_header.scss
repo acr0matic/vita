@@ -7,6 +7,7 @@
 
 .header {
   position: sticky;
+  z-index: $z-index-header;
   top: 0;
 
   background: rgba($palette-yellow, 0.25);
