@@ -17,28 +17,32 @@ CSS-переменные. Во всех других случаях - SASS.
   --border-radius: 5px;
 
   /* Текст */
-  --font-title-large: 64px;
+  --font-title-large: 60px;
   --font-title-medium: 48px;
-  --font-title-small: 36px;
-  --font-text-large: 24px;
+  --font-title-small: 24px;
+  --font-title-tiny: 22px;
+  --font-text-large: 20px;
   --font-text-big: 18px;
   --font-text-regular: 16px;
   --font-text-small: 14px;
   --line-height-text: 1.2;
-  --line-height-title: 0.9;
+  --line-height-title: 1.2;
 }
 /* Конец CSS-переменных */
 
 /* Начало SASS-переменные */
-$transition-time: 0.2s;
+$transition-time: 0.4s;
 $border-radius-round: 9999px;
 
 $palette-white: #ffffff;
-$palette-black: #000000;
+$palette-black: #2a374a;
+$palette-green: #b6bf65;
+$palette-yellow: #f7ecd7;
 
-$color-text__primary: #000000;
+$color-text__primary: #2a374a;
 $color-text__black: #000000;
 $color-text__white: #ffffff;
+$color-text__green: #b6bf65;
 
 $link-color: #40add8;
 $link-hover-color: #60d2ff !default;

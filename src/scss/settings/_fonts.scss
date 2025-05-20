@@ -5,12 +5,14 @@
 -----------------------------------------------------------------------------
 */
 
-@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Light", 300);
-@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Regular", 400);
-@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Medium", 500);
-@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Bold", 700);
+@include font-face("DolomanPavljenko", "../assets/fonts/DolomanPavljenko/DolomanPavljenko-Regular", 400);
 
-$font-default: "Roboto", sans-serif; // Семейство по умолчанию
+@include font-face("NunitoSans", "../assets/fonts/NunitoSans/NunitoSans-Regular", 400);
+@include font-face("NunitoSans", "../assets/fonts/NunitoSans/NunitoSans-SemiBold", 600);
+@include font-face("NunitoSans", "../assets/fonts/NunitoSans/NunitoSans-Bold", 700);
+
+$font-default: "NunitoSans", sans-serif; // Семейство по умолчанию
+$font-heading: "DolomanPavljenko", sans-serif; // Семейство по умолчанию
 
 body {
   color: $color-text__primary;
@@ -27,5 +29,6 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: $font-heading;
   line-height: var(--line-height-title);
 }

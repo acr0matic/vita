@@ -1,5 +1,7 @@
 /* Подключение стилей */
 import "modern-normalize";
+import "swiper/css";
+import "swiper/css/effect-fade";
 
 
 

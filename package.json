@@ -79,8 +79,10 @@
     "create": "node ./node_scripts/create.js"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
     "imask": "^7.6.1",
     "modern-normalize": "^3.0.1",
+    "swiper": "^11.2.7",
     "vanilla-lazyload": "^17.9.0"
   }
 }
