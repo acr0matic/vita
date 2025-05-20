@@ -3,9 +3,30 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
 }
 
 .header {
+  position: sticky;
+  top: 0;
 
+  background: rgba($palette-yellow, 0.25);
+  backdrop-filter: blur(6px);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 0;
+  }
+
+  &__logo {
+    margin-right: 32px;
+  }
+
+  &__callback {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
 }
