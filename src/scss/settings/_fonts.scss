@@ -29,6 +29,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-weight: $weight-Regular;
   font-family: $font-heading;
   line-height: var(--line-height-title);
 }

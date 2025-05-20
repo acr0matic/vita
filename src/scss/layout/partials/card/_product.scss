@@ -1,0 +1,25 @@
+.card-product {
+  &__picture {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    margin-bottom: 28px;
+    border-radius: var(--border-radius);
+  }
+
+  &__price {
+    margin-top: 8px;
+
+    font-weight: $weight-Bold;
+    font-size: var(--font-text-large);
+  }
+
+  &__action {
+    margin-top: 28px;
+
+    .button {
+      width: 100%;
+    }
+  }
+}

@@ -3,11 +3,17 @@
 // -----------------------------------------------------------------------------
 
 .section {
-  &__header {
+  &:not(:first-child) {
+    margin-top: 100px;
+  }
 
+  &__header {
+    margin-bottom: 50px;
   }
 
   &__title {
-
+    font-size: var(--font-title-medium);
+    text-align: center;
+    text-transform: uppercase;
   }
 }
