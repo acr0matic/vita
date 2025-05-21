@@ -1,0 +1,82 @@
+<section id="s-blog" class="section section--bg section--green">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">
+        {{ title }}
+      </h2>
+    </div>
+    <!-- /.section__header -->
+
+    <div class="blog">
+      <div class="blog__content">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <include src="layout/template/card/blog.html">
+                {
+                "image": "assets/images/content/blog/1.jpg",
+                "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                }
+              </include>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <include src="layout/template/card/blog.html">
+                {
+                "image": "assets/images/content/blog/2.jpg",
+                "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                }
+              </include>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <include src="layout/template/card/blog.html">
+                {
+                "image": "assets/images/content/blog/3.jpg",
+                "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                }
+              </include>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <include src="layout/template/card/blog.html">
+                {
+                "image": "assets/images/content/blog/4.jpg",
+                "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                }
+              </include>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <include src="layout/template/card/blog.html">
+                {
+                "image": "assets/images/content/blog/5.jpg",
+                "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                }
+              </include>
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.swiper -->
+
+        <div class="swiper-controls">
+          <div class="swiper-pagiantion"></div>
+        </div>
+        <!-- /.swiper-controls -->
+      </div>
+      <!-- /.blog__content -->
+
+      <picture class="blog__background lazy">
+        <img class="image image--cover lazy__item" data-src="assets/images/layout/section/blog/bg.svg" alt="">
+      </picture>
+    </div>
+    <!-- /.blog -->
+  </div>
+  <!-- /.container -->
+</section>

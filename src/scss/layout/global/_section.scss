@@ -3,6 +3,15 @@
 // -----------------------------------------------------------------------------
 
 .section {
+  &--bg {
+    padding: 100px 0;
+    border-radius: 50px;
+  }
+
+  &--green {
+    background: linear-gradient(303deg, #fbffe4 23.53%, #ebf9d0 83.85%);
+  }
+
   &:not(:first-child) {
     margin-top: 100px;
   }
