@@ -1,0 +1,56 @@
+#cp-home-advantages {
+  .advantages {
+    display: grid;
+    grid-template-columns: 590px 1fr;
+    gap: 140px;
+    align-items: center;
+
+    .section__title {
+      text-align: left;
+    }
+
+    &__picture {
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border-radius: var(--border-radius);
+    }
+
+    &__content {
+    }
+
+    &__item {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 36px;
+      }
+    }
+
+    &__icon {
+      padding: 14px;
+      border-radius: var(--border-radius);
+      background: linear-gradient(30deg, #bddf78 7.92%, #eaf085 91.55%);
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 10px;
+
+      font-weight: $weight-Medium;
+      font-size: var(--font-title-tiny);
+      font-family: $font-default;
+    }
+
+    &__desc {
+      max-width: 430px;
+      line-height: 1.4;
+    }
+  }
+}

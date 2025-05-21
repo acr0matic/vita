@@ -8,8 +8,12 @@
     border-radius: 50px;
   }
 
-  &--green {
+  &--lightgreen {
     background: linear-gradient(303deg, #fbffe4 23.53%, #ebf9d0 83.85%);
+  }
+
+  &--green {
+    background: linear-gradient(128deg, #a8b56d 25.43%, #d3d353 79.26%);
   }
 
   &:not(:first-child) {
