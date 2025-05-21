@@ -1,4 +1,7 @@
 #cp-home-advantages {
+  position: relative;
+  overflow: hidden;
+
   .advantages {
     display: grid;
     grid-template-columns: 590px 1fr;
@@ -7,6 +10,35 @@
 
     .section__title {
       text-align: left;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: -52px;
+
+      width: 568px;
+      aspect-ratio: 1 / 1;
+
+      color: $palette-white;
+      opacity: 0.3;
+
+      transform: translateY(-50%);
+    }
+
+    &__background {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 1040px;
+      height: 815px;
+    }
+
+    &__picture,
+    &__content {
+      position: relative;
+      z-index: 3;
     }
 
     &__picture {
