@@ -1,0 +1,32 @@
+#cp-home-brands {
+  .brands {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    &__picture {
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+
+      margin-bottom: 30px;
+
+      border-radius: var(--border-radius);
+    }
+
+    &__title {
+      margin-bottom: 10px;
+
+      font-weight: $weight-Medium;
+      font-size: var(--font-text-large);
+
+      text-align: center;
+    }
+
+    &__desc {
+      line-height: var(--line-height-text-alt);
+      text-align: center;
+    }
+  }
+}
