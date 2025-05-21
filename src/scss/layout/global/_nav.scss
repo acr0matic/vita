@@ -13,6 +13,16 @@
   &__link {
   }
 
+  a {
+    transition: $transition-time ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+
 
 
   &--header {
@@ -27,6 +37,22 @@
 
     .nav__link {
 
+    }
+  }
+
+  &--footer {
+    .nav__link {
+      display: inline-block;
+      margin-bottom: 24px;
+
+      font-weight: $weight-Medium;
+      font-size: var(--font-text-large);
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
   }
 }
