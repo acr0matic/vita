@@ -2,6 +2,7 @@
 import "modern-normalize";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import 'overlayscrollbars/overlayscrollbars.css';
 
 
 

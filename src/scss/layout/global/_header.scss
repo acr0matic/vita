@@ -6,9 +6,11 @@
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   z-index: $z-index-header;
   top: 0;
+
+  width: 100%;
 
   background: rgba($palette-yellow, 0.25);
   backdrop-filter: blur(6px);

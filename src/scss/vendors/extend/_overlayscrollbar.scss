@@ -1,0 +1,14 @@
+body > * .os-scrollbar {
+  --os-handle-border-radius: 0;
+}
+
+.os-scrollbar {
+  --os-size: 14px;
+  --os-handle-bg: rgba(42, 55, 74, 0.35);
+  --os-handle-bg-hover: rgba(42, 55, 74, 0.75);
+  --os-handle-bg-active: rgba(42, 55, 74, 1);
+}
+
+.os-scrollbar-handle {
+  transition: 0.4s ease !important;
+}

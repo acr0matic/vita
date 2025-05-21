@@ -36,7 +36,7 @@
     }
 
     &__picture,
-    &__content {
+    &__wrapper {
       position: relative;
       z-index: 3;
     }
@@ -46,9 +46,7 @@
       width: 100%;
       aspect-ratio: 4 / 5;
       border-radius: var(--border-radius);
-    }
-
-    &__content {
+      pointer-events: none;
     }
 
     &__item {
