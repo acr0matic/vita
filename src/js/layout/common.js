@@ -1,13 +1,12 @@
 // history.scrollRestoration = 'manual';
 
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { OverlayScrollbars } from 'overlayscrollbars';
 import { StyleClass } from "../global/settings";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 const bodyScroll = OverlayScrollbars(document.querySelector('.page'), {});
 const classObserver = new MutationObserver((mutations) => {
@@ -24,9 +23,3 @@ const classObserver = new MutationObserver((mutations) => {
 });
 
 classObserver.observe(document.body, { attributes: true });
-
-ScrollSmoother.create({
-  smooth: 1,
-  effects: true,
-  content: document.querySelector('.smooth-content'),
-});

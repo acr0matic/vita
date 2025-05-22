@@ -1,6 +1,7 @@
 /* Подключение стилей */
 import "modern-normalize";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import 'overlayscrollbars/overlayscrollbars.css';
 
