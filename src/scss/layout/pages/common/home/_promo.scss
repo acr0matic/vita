@@ -1,0 +1,32 @@
+#cp-home-promo {
+  position: relative;
+
+  .promo {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 1000px;
+    }
+
+    &__content {
+      max-width: 830px;
+      margin-top: auto;
+      margin-bottom: 100px;
+      padding: 60px 200px 60px 60px;
+
+      border-radius: 4px;
+      background: linear-gradient(125deg, rgba(156, 177, 65, 0.51) 38.56%, rgba(233, 233, 49, 0.51) 80.74%);
+      backdrop-filter: blur(4px);
+
+      .section__title {
+        text-align: left;
+      }
+    }
+
+    &__background {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+    }
+  }
+}
