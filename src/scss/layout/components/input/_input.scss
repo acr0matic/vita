@@ -1,14 +1,32 @@
 .input {
   position: relative;
 
+  &--search {
+    .input__field {
+      padding-left: 40px;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+
+      width: 24px;
+      height: 24px;
+
+      transform: translateY(-50%);
+    }
+  }
+
   &__field {
     width: 100%;
-    padding: 20px 25px;
+    padding: 10px;
 
-    border: 1px solid $palette-black;
+    border: 1px solid transparent;
+    border-radius: 5px;
     outline: none;
 
-    background-color: transparent;
+    background-color: $palette-white;
     color: $color-text__primary;
 
     font-size: var(--font-text-regular);

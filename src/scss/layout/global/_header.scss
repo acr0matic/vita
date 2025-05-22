@@ -18,18 +18,84 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     padding: 10px 0;
   }
 
   &__logo {
-    margin-right: 32px;
+  }
+
+  &__nav {
+    margin: 0 auto;
+  }
+
+  &__search {
+    width: 100%;
+    max-width: 260px;
   }
 
   &__callback {
     display: flex;
     gap: 20px;
     align-items: center;
+
+    margin-left: 20px;
+  }
+
+  &__action {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    margin-left: auto;
+  }
+
+  &__account,
+  &__cart {
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &__account {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-weight: $weight-Medium;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    span {
+      position: absolute;
+      z-index: 2;
+      right: -2px;
+      bottom: -2px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 16px;
+      height: 16px;
+
+      border-radius: $border-radius-round;
+      background-color: $palette-black;
+      color: $color-text__white;
+
+      font-weight: $weight-Bold;
+      font-size: 8px;
+    }
   }
 }
