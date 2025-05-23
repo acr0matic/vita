@@ -2,7 +2,7 @@
   position: relative;
 
   &__picture {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-desktop) {
       margin-bottom: 18px;
     }
 
@@ -15,7 +15,7 @@
   }
 
   &__title {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-desktop) {
       font-size: var(--font-text-regular);
     }
 

@@ -7,10 +7,18 @@
     position: relative;
 
     .swiper-button-prev {
+      @include breakpoint($breakpoint-desktop) {
+        left: -16px;
+      }
+
       left: -64px;
     }
 
     .swiper-button-next {
+      @include breakpoint($breakpoint-desktop) {
+        right: -16px;
+      }
+
       right: -64px;
     }
 
@@ -24,6 +32,10 @@
     }
 
     &__slide {
+      @include breakpoint($breakpoint-desktop) {
+        min-height: 720px;
+      }
+
       position: relative;
       min-height: 860px;
     }

@@ -26,11 +26,15 @@
   }
 
   &__nav {
+    @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
+
     margin: 0 auto;
   }
 
   &__search {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-desktop) {
       display: none;
     }
 
@@ -39,6 +43,10 @@
   }
 
   &__callback {
+    @include breakpoint($breakpoint-desktop) {
+      margin-left: auto;
+    }
+
     display: flex;
     gap: 20px;
     align-items: center;
@@ -47,6 +55,10 @@
   }
 
   &__action {
+    @include breakpoint($breakpoint-desktop) {
+      margin-left: 24px;
+    }
+
     display: flex;
     gap: 20px;
     align-items: center;

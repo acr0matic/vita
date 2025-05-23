@@ -5,7 +5,7 @@
   .blog {
     &__content {
       .swiper-wrapper {
-        @include breakpoint($breakpoint-laptop) {
+        @include breakpoint($breakpoint-desktop) {
           grid-template-rows: 287px 287px;
           gap: 20px;
         }

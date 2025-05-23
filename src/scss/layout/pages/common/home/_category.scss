@@ -3,9 +3,13 @@
     padding-top: 32px;
 
     &__grid {
-      @include breakpoint($breakpoint-laptop) {
+      @include breakpoint($breakpoint-desktop) {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 64px 164px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        gap: 64px 92px;
       }
 
       display: grid;
@@ -27,13 +31,13 @@
       }
 
       &:nth-child(5) {
-        @include breakpoint($breakpoint-laptop) {
+        @include breakpoint($breakpoint-desktop) {
           grid-column: 2 / 3;
         }
       }
 
       &:nth-child(6) {
-        @include breakpoint($breakpoint-laptop) {
+        @include breakpoint($breakpoint-desktop) {
           grid-column: 3 / 4;
         }
       }

@@ -3,8 +3,13 @@
   overflow: hidden;
 
   .advantages {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-desktop) {
       gap: 24px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      grid-template-columns: 420px 1fr;
+      gap: 80px;
     }
 
     display: grid;
@@ -17,6 +22,10 @@
     }
 
     &__logo {
+      @include breakpoint($breakpoint-laptop) {
+        width: 320px;
+      }
+
       position: absolute;
       top: 50%;
       left: -52px;
@@ -31,6 +40,11 @@
     }
 
     &__background {
+      @include breakpoint($breakpoint-laptop) {
+        width: 720px;
+        height: 540px;
+      }
+
       position: absolute;
       right: 0;
       bottom: 0;

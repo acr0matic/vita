@@ -9,6 +9,10 @@
     }
 
     &__content {
+      @include breakpoint($breakpoint-laptop) {
+        max-width: 720px;
+      }
+
       max-width: 870px;
       margin-top: auto;
       margin-bottom: 100px;
@@ -23,6 +27,10 @@
       }
 
       .section__title {
+        @include breakpoint($breakpoint-laptop) {
+          font-size: var(--font-title-large);
+        }
+
         font-size: 80px;
         text-align: left;
       }
