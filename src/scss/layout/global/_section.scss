@@ -25,6 +25,10 @@
   }
 
   &__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 32px;
+    }
+
     margin-bottom: 50px;
   }
 

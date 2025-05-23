@@ -2,12 +2,28 @@
   position: relative;
   overflow: hidden;
 
+  .section__header {
+    position: relative;
+    z-index: 2;
+  }
+
   .blog {
     &__content {
+      .swiper {
+        @include breakpoint($breakpoint-tablet) {
+          overflow: visible;
+        }
+      }
+
       .swiper-wrapper {
         @include breakpoint($breakpoint-desktop) {
           grid-template-rows: 287px 287px;
           gap: 20px;
+        }
+
+        @include breakpoint($breakpoint-tablet) {
+          display: flex;
+          grid-area: 0;
         }
 
         display: grid;

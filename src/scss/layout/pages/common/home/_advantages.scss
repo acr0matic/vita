@@ -12,6 +12,11 @@
       gap: 80px;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
     display: grid;
     grid-template-columns: 590px 1fr;
     gap: 140px;
@@ -60,6 +65,16 @@
     }
 
     &__picture {
+      @include breakpoint($breakpoint-tablet) {
+        grid-row: 2 / 3;
+        max-width: 360px;
+        margin-left: auto;
+      }
+
+      @include breakpoint($breakpoint-mobile) {
+        max-width: 100%;
+      }
+
       overflow: hidden;
       width: 100%;
       aspect-ratio: 4 / 5;

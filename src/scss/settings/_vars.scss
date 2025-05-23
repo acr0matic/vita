@@ -28,6 +28,12 @@ CSS-переменные. Во всех других случаях - SASS.
   --line-height-text: 1.2;
   --line-height-text-alt: 1.4;
   --line-height-title: 1.2;
+
+  @include breakpoint($breakpoint-tablet) {
+    --font-title-large: 38px;
+    --font-title-medium: 28px;
+    --font-text-large: 16px;
+  }
 }
 /* Конец CSS-переменных */
 

@@ -6,6 +6,13 @@
   .hero {
     position: relative;
 
+    .swiper-button-prev,
+    .swiper-button-next {
+      @include breakpoint($breakpoint-notebook) {
+        display: none;
+      }
+    }
+
     .swiper-button-prev {
       @include breakpoint($breakpoint-desktop) {
         left: -16px;
@@ -46,10 +53,43 @@
     }
 
     &__content {
+      @include breakpoint($breakpoint-mobile) {
+        top: 132px;
+        left: 16px;
+        width: calc(100% - 32px);
+
+        transform: none;
+      }
+
       position: absolute;
       top: 50%;
 
+      width: 100%;
       transform: translateY(-50%);
+
+      &::before {
+        @include breakpoint($breakpoint-mobile) {
+          content: "";
+          position: absolute;
+          top: -120px;
+          left: 50%;
+
+          width: 400px;
+          height: 400px;
+
+          border-radius: 403px;
+          background: rgba(217, 203, 177, 0.84);
+          filter: blur(33px);
+
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &__text,
+    &__action {
+      position: relative;
+      z-index: 3;
     }
 
     &__title {

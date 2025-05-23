@@ -23,6 +23,11 @@
   }
 
   &__logo {
+    span {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+    }
   }
 
   &__nav {
@@ -52,6 +57,12 @@
     align-items: center;
 
     margin-left: 20px;
+
+    .social {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+    }
   }
 
   &__action {
@@ -82,6 +93,12 @@
     svg {
       width: 24px;
       height: 24px;
+    }
+
+    p {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
     }
   }
 

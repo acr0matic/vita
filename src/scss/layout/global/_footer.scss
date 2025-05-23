@@ -6,6 +6,10 @@
 }
 
 .footer {
+  @include breakpoint($breakpoint-tablet) {
+    overflow: visible;
+  }
+
   position: relative;
   overflow: hidden;
   margin-top: 100px;
@@ -21,6 +25,10 @@
       bottom: -64px;
       left: calc(50% - 500px);
       transform: rotate(-15deg);
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
     }
 
     position: absolute;
@@ -58,6 +66,11 @@
       gap: 48px 0;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
     display: grid;
     grid-template-columns: 345px 405px 1fr;
     gap: 100px;
@@ -66,6 +79,12 @@
   &__logo {
     @include breakpoint($breakpoint-desktop) {
       margin-right: 120px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 128px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
     path {
@@ -92,6 +111,15 @@
       align-items: center;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+      grid-row: auto;
+      grid-column: auto;
+
+      margin-right: 0;
+      text-align: center;
+    }
+
     gap: 24px;
     font-size: var(--font-text-big);
     line-height: 1.5;
@@ -109,12 +137,28 @@
       justify-content: flex-start;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      grid-row: auto;
+      grid-column: auto;
+
+      gap: 40px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
 
   &__bottom {
+    @include breakpoint($breakpoint-tablet) {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+      text-align: center;
+    }
+
     position: relative;
     display: flex;
     align-items: center;
@@ -124,7 +168,21 @@
     padding: 36px 0;
     border-top: 1px solid rgba($color: $palette-white, $alpha: 0.55);
 
+    & > p {
+      margin-top: 20px;
+    }
+
     .social {
+      @include breakpoint($breakpoint-tablet) {
+        position: static;
+        grid-row: 1 / 2;
+        justify-content: center;
+
+        margin-bottom: 24px;
+
+        transform: none;
+      }
+
       position: absolute;
       top: 50%;
       left: 50%;
@@ -134,6 +192,11 @@
   }
 
   &__copyright {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
     display: flex;
     gap: 40px;
     align-items: center;
