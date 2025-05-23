@@ -27,6 +27,8 @@
       @include breakpoint($breakpoint-tablet) {
         display: none;
       }
+
+      font-weight: $weight-Regular;
     }
   }
 

@@ -20,9 +20,9 @@
 
   ul {
     width: 100%;
-    min-width: 360px;
+    min-width: 220px;
 
-    padding: 8px 0;
+    padding: 10px 20px;
 
     border-radius: var(--border-radius);
     background-color: $palette-white;
@@ -87,16 +87,11 @@
     a,
     span {
       display: flex;
-      padding: 12px 20px;
 
-      color: #231f20;
+      padding: 5px 0;
+
+      color: $color-text__primary;
       transition: $transition-time ease;
-
-      @media (hover: hover) {
-        &:hover {
-          background-color: #e6ebef;
-        }
-      }
     }
 
     ul {
