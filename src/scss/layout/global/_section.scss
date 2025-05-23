@@ -4,6 +4,10 @@
 
 .section {
   &--bg {
+    @include breakpoint($breakpoint-laptop) {
+      padding: 54px 0;
+    }
+
     padding: 100px 0;
     border-radius: 50px;
   }

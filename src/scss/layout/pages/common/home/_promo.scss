@@ -9,16 +9,21 @@
     }
 
     &__content {
-      max-width: 830px;
+      max-width: 870px;
       margin-top: auto;
       margin-bottom: 100px;
-      padding: 60px 200px 60px 60px;
+      padding: 60px 30px 60px 60px;
 
       border-radius: 4px;
       background: linear-gradient(125deg, rgba(156, 177, 65, 0.51) 38.56%, rgba(233, 233, 49, 0.51) 80.74%);
       backdrop-filter: blur(4px);
 
+      .section__header {
+        margin-bottom: 30px;
+      }
+
       .section__title {
+        font-size: 80px;
         text-align: left;
       }
     }

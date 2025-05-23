@@ -30,6 +30,10 @@
   }
 
   &__search {
+    @include breakpoint($breakpoint-laptop) {
+      display: none;
+    }
+
     width: 100%;
     max-width: 260px;
   }

@@ -7,6 +7,7 @@
 
 .footer {
   position: relative;
+  overflow: hidden;
   margin-top: 100px;
   padding-top: 64px;
 
@@ -16,6 +17,12 @@
   color: $color-text__white;
 
   &__background {
+    @include breakpoint($breakpoint-laptop) {
+      bottom: -64px;
+      left: calc(50% - 500px);
+      transform: rotate(-15deg);
+    }
+
     position: absolute;
     bottom: 0;
     left: calc(50% - 180px);
@@ -41,13 +48,24 @@
   }
 
   &__content {
+    @include breakpoint($breakpoint-laptop) {
+      grid-template-columns: 400px 405px 1fr;
+      gap: 0;
+    }
+
     display: grid;
     grid-template-columns: 345px 405px 1fr;
     gap: 100px;
   }
 
-  &__logo path {
-    fill: $palette-white;
+  &__logo {
+    @include breakpoint($breakpoint-laptop) {
+      margin-right: 120px;
+    }
+
+    path {
+      fill: $palette-white;
+    }
   }
 
   &__callback,
@@ -57,6 +75,10 @@
   }
 
   &__callback {
+    @include breakpoint($breakpoint-laptop) {
+      margin-right: 70px;
+    }
+
     gap: 24px;
     font-size: var(--font-text-big);
     line-height: 1.5;

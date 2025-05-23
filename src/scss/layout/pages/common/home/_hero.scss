@@ -28,6 +28,11 @@
       min-height: 860px;
     }
 
+    &__bg {
+      position: absolute;
+      inset: 0;
+    }
+
     &__content {
       position: absolute;
       top: 50%;

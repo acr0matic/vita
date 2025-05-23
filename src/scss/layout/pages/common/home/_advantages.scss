@@ -3,6 +3,10 @@
   overflow: hidden;
 
   .advantages {
+    @include breakpoint($breakpoint-laptop) {
+      gap: 24px;
+    }
+
     display: grid;
     grid-template-columns: 590px 1fr;
     gap: 140px;
