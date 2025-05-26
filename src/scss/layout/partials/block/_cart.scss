@@ -1,0 +1,33 @@
+/*
+Любые универсальные блоки должны начинаться с префикса _b (block)
+*/
+
+.b-cart {
+  position: relative;
+
+  svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  span {
+    position: absolute;
+    z-index: 2;
+    right: -2px;
+    bottom: -2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: $border-radius-round;
+    background-color: $palette-black;
+    color: $color-text__white;
+
+    font-weight: $weight-Bold;
+    font-size: 8px;
+  }
+}

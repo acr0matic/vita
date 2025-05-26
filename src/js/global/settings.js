@@ -3,7 +3,7 @@
 // Повторяющиеся стили
 export const StyleClass = {
   mobile: {
-    open: 'mobile-menu--open',
+    open: 'menu--open',
   },
 
   body: {

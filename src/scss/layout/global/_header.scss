@@ -67,6 +67,24 @@
     }
   }
 
+  &__phone {
+    span {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+    }
+
+    svg {
+      @include breakpoint($breakpoint-tablet) {
+        display: block;
+      }
+
+      display: none;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   &__action {
     @include breakpoint($breakpoint-desktop) {
       margin-left: 24px;
@@ -105,32 +123,20 @@
   }
 
   &__cart {
-    position: relative;
 
-    svg {
-      width: 26px;
-      height: 26px;
+  }
+
+  &__burger {
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
     }
 
-    span {
-      position: absolute;
-      z-index: 2;
-      right: -2px;
-      bottom: -2px;
+    display: none;
+    width: 48px;
+    height: 48px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    margin-left: 20px;
 
-      width: 16px;
-      height: 16px;
-
-      border-radius: $border-radius-round;
-      background-color: $palette-black;
-      color: $color-text__white;
-
-      font-weight: $weight-Bold;
-      font-size: 8px;
-    }
+    color: $color-text__primary;
   }
 }
