@@ -16,7 +16,10 @@ if (menu) {
       const isMenuOpen = menu.classList.contains(StyleClass.state.open);
       toggleMenu(!isMenuOpen);
     }
-    else if (!target.closest('.mobile-menu__content')) {
+    else if (!target.closest('.menu__wrapper')) {
+      toggleMenu(false);
+    }
+    else if (target.closest('.menu__close')) {
       toggleMenu(false);
     }
   });
