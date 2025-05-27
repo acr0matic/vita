@@ -1,0 +1,30 @@
+#sp-brand-content {
+  .content {
+    &__banner {
+      overflow: hidden;
+      aspect-ratio: 4 / 1;
+      margin-bottom: 50px;
+      border-radius: 20px;
+    }
+
+    &__text {
+      max-width: 960px;
+      margin-bottom: 100px;
+    }
+
+    &__product {
+      margin-top: 100px;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 50px 20px;
+    }
+
+    &__action {
+      margin-top: 60px;
+      text-align: center;
+    }
+  }
+}
