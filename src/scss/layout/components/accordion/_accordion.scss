@@ -1,0 +1,57 @@
+.accordion {
+  padding: 20px;
+  border: 1px solid #dfd5ba;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  transition: $transition-time ease;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &.is-open {
+    background-color: $palette-yellow;
+
+    .accordion__title {
+      color: $color-text__green;
+    }
+
+    .accordion__icon svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: var(--font-title-small);
+    transition: $transition-time ease;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    padding: 4px;
+
+    border-radius: 5px;
+    background-image: $gradient;
+
+    color: $color-text__white;
+
+    svg {
+      transition: $transition-time ease;
+    }
+  }
+
+  &__content {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}

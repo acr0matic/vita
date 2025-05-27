@@ -40,10 +40,12 @@ CSS-переменные. Во всех других случаях - SASS.
 /* Начало SASS-переменные */
 $transition-time: 0.4s;
 $border-radius-round: 9999px;
+$gradient: linear-gradient(128deg, #a8b56d 25.43%, #d3d353 79.26%);
 
 $palette-white: #ffffff;
 $palette-black: #2a374a;
 $palette-green: #b6bf65;
+$palette-green--pale: #f2fcd9;
 $palette-yellow: #f7ecd7;
 $palette-yellow--pale: #f5f2ea;
 
@@ -55,4 +57,5 @@ $color-text__gray: #99a1ad;
 
 $link-color: #b6bf65;
 $link-hover-color: #37673d !default;
+
 /* Конец SASS-переменных */

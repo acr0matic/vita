@@ -23,7 +23,7 @@
   }
 
   &--green {
-    background: linear-gradient(128deg, #a8b56d 25.43%, #d3d353 79.26%);
+    background: $gradient;
   }
 
   &:not(:first-child) {
@@ -46,5 +46,10 @@
     font-size: var(--font-title-medium);
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__action {
+    margin-top: 50px;
+    text-align: center;
   }
 }

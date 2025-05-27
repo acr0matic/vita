@@ -63,11 +63,16 @@
     <path d="M3 21H45M3 28H45" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
 
-  <symbol id="icon-close" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+  <symbol id="icon-close" width="100%" height="100%"
     viewBox="0 0 48 48" fill="none">
     <path d="M37.8115 11L11.0004 37.8111" stroke="currentColor" stroke-linecap="round"
       stroke-linejoin="round" />
     <path d="M11.001 11L37.8121 37.8111" stroke="currentColor" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+
+  <symbol id="icon-arrow" width="100%" height="100%" viewBox="0 0 24 25" fill="none">
+    <path d="M18 10L12 16L6 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
       stroke-linejoin="round" />
   </symbol>
 </svg>
