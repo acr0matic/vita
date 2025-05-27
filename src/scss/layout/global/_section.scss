@@ -2,6 +2,12 @@
 // В этом файле прописываются общие стили для всех секций сайта
 // -----------------------------------------------------------------------------
 
+// .page__body:not(#cp-home) {
+//   .section:first-child {
+//     padding-top: 120px;
+//   }
+// }
+
 .section {
   &--bg {
     @include breakpoint($breakpoint-laptop) {
@@ -22,6 +28,10 @@
 
   &:not(:first-child) {
     margin-top: 100px;
+  }
+
+  &:last-child {
+    margin-bottom: 100px;
   }
 
   &__header {

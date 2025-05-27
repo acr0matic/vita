@@ -3,6 +3,10 @@
     <img class="image image--cover lazy__item" data-src="{{ image }}" alt="">
   </picture>
 
+  <if condition="date">
+    <p class="card-blog__date">{{ date }}</p>
+  </if>
+
   <p class="card-blog__title">{{ title }}</p>
   <a class="link-stretched" href=""></a>
 </div>

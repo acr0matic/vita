@@ -102,4 +102,37 @@
       gap: 12px;
     }
   }
+
+  &--breadcrumbs {
+    ol,
+    ul {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 13px;
+    }
+
+    li:not(:first-child) {
+      &::before {
+        content: "-";
+      }
+    }
+
+    a {
+      color: #717986;
+      transition: $transition-time ease;
+
+      @media (hover: hover) {
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+
+    span {
+      color: #9aa2ae;
+    }
+  }
 }
