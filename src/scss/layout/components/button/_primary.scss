@@ -1,28 +1,4 @@
 .button-primary {
   background-color: $palette-black;
   color: $color-text__white;
-
-  @media (hover: hover) {
-    &:hover {
-      &::after {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: -1px;
-
-    border-radius: var(--border-radius);
-
-    background: linear-gradient(128deg, #a8b56d 25.43%, #d3d353 79.26%);
-    opacity: 0;
-    visibility: hidden;
-
-    transition: $transition-time ease;
-  }
 }

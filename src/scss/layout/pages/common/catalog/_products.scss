@@ -1,0 +1,9 @@
+#cp-catalog-products {
+  .products {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 50px 20px;
+    }
+  }
+}
