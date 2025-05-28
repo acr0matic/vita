@@ -1,15 +1,34 @@
 [data-editor] {
   font-size: var(--font-text-regular);
-  line-height: var(--line-height-text);
+  line-height: var(--line-height-text-alt);
 
   & > *:not(:last-child) {
     margin-bottom: 16px;
   }
 
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: $weight-Bold;
+    font-family: $font-default;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
   blockquote {
-    padding: 16px 24px;
-    border-left: 3px solid #eeeeee;
-    font-style: italic;
+    font-size: 24px;
+    line-height: var(--line-height-text);
   }
 
   video {

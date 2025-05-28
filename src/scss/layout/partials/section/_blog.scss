@@ -38,6 +38,11 @@
           grid-column: 1 / 3;
         }
       }
+
+      .card-blog__picture {
+        height: 100%;
+        aspect-ratio: initial;
+      }
     }
 
     &__background {

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="sp-brand" class="page__body">
+      <include src="layout/block/breadcrumbs.html"></include>
+
+      <section id="sp-blog-content" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">
+              Заголовок статьи может быть в одну, две или три строки
+            </h2>
+          </div>
+          <!-- /.section__header -->
+
+          <div class="content">
+            <div class="content__content">
+              <time datetime="" class="content__date">19.03.2025</time>
+
+              <div class="content__text" data-editor="">
+                <blockquote>Волшебный мир красоты рождается в лабораториях и на производстве в результате долгих поисков и упорного труда.</blockquote>
+                <h2>Подзаголовок 1</h2>
+                <p>Системы управления качеством соответствуют международным стандартам (ISO 9001:2015, 22000:2018, 22716:2007 (GMP). Собственные аккредитованные лаборатории: физико-химическая и микробиологическая.</p>
+                <p>Минимизация риска выпуска некачественной продукции.</p>
+                <h3>Подзаголовок 2</h3>
+                <p>Системы управления качеством соответствуют международным стандартам (ISO 9001:2015, 22000:2018, 22716:2007 (GMP). Собственные аккредитованные лаборатории: физико-химическая и микробиологическая.</p>
+                <p>Минимизация риска выпуска некачественной продукции.</p>
+                <h4>Подзаголовок 3</h4>
+                <ul>
+                  <li>Системы управления качеством соответствуют международным стандартам (ISO 9001:2015, 22000:2018, 22716:2007 (GMP). Собственные аккредитованные лаборатории: физико-химическая и микробиологическая.</li>
+                  <li>Минимизация риска выпуска некачественной продукции.</li>
+                </ul>
+              </div>
+              <!-- /.content__text -->
+            </div>
+            <!-- /.content__content -->
+
+            <div class="content__media">
+              <picture class="content__picture lazy lazy--preloader">
+                <img class="image image--cover lazy__item" data-src="assets/images/layout/single/blog/picture.jpg" alt="">
+              </picture>
+
+              <div class="content__share">
+
+              </div>
+              <!-- /.content__share -->
+            </div>
+            <!-- /.content__media -->
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <section id="sp-blog-related" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">
+              Другие статьи
+            </h2>
+          </div>
+          <!-- /.section__header -->
+
+          <div class="related">
+            <div class="related__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <include src="layout/template/card/blog.html">
+                      {
+                      "image": "assets/images/content/blog/1.jpg",
+                      "date": "19.03.2025",
+                      "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                      }
+                    </include>
+                  </div>
+                  <!-- /.swiper-slide -->
+
+                  <div class="swiper-slide">
+                    <include src="layout/template/card/blog.html">
+                      {
+                      "image": "assets/images/content/blog/2.jpg",
+                      "date": "19.03.2025",
+                      "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                      }
+                    </include>
+                  </div>
+                  <!-- /.swiper-slide -->
+
+                  <div class="swiper-slide">
+                    <include src="layout/template/card/blog.html">
+                      {
+                      "image": "assets/images/content/blog/3.jpg",
+                      "date": "19.03.2025",
+                      "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                      }
+                    </include>
+                  </div>
+                  <!-- /.swiper-slide -->
+
+                  <div class="swiper-slide">
+                    <include src="layout/template/card/blog.html">
+                      {
+                      "image": "assets/images/content/blog/4.jpg",
+                      "date": "19.03.2025",
+                      "title": "Название статьи в две или три строки. Добавить название статьи в две или три строки в две или три строки."
+                      }
+                    </include>
+                  </div>
+                  <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+              </div>
+              <!-- /.swiper -->
+            </div>
+            <!-- /.related__slider -->
+          </div>
+          <!-- /.related -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <include src="layout/section/callback.html"></include>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>

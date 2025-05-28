@@ -15,6 +15,7 @@ import './layout/header';
 import './layout/menu';
 
 import './layout/page/home';
+import './layout/page/single-blog';
 
 import './component/accordion';
 import './component/form';

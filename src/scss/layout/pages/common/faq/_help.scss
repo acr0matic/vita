@@ -1,7 +1,7 @@
 #cp-faq-help {
   .help {
     padding: 50px 0;
-    border-radius: 20px;
+    border-radius: var(--border-radius-big);
     background-color: $palette-green--pale;
 
     .section__header {
