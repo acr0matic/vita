@@ -3,7 +3,6 @@
   border: 1px solid #dfd5ba;
   border-radius: var(--border-radius);
 
-  cursor: pointer;
   transition: $transition-time ease;
 
   &:not(:last-child) {
@@ -25,8 +24,16 @@
   &__header {
     display: flex;
     gap: 32px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    line-height: var(--line-height-text-alt);
+
+    .accordion__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__title {
@@ -44,6 +51,7 @@
     background-image: $gradient;
 
     color: $color-text__white;
+    cursor: pointer;
 
     svg {
       transition: $transition-time ease;
