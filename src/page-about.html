@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="cp-about" class="page__body">
+      <include src="layout/block/breadcrumbs.html"></include>
+
+      <section id="cp-about-content" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h1 class="section__title">
+              Производство косметики и биологически активных компонентов
+            </h1>
+          </div>
+          <!-- /.section__header -->
+
+          <div class="content">
+            <div class="content__text" data-editor>
+              <blockquote>Волшебный мир красоты рождается в лабораториях и на производстве в результате долгих поисков и упорного труда.</blockquote>
+              <h2>Подзаголовок 1</h2>
+              <p>Системы управления качеством соответствуют международным стандартам (ISO 9001:2015, 22000:2018, 22716:2007 (GMP). Собственные аккредитованные лаборатории: физико-химическая и микробиологическая.</p>
+              <p>Минимизация риска выпуска некачественной продукции.</p>
+              <h3>Подзаголовок 2</h3>
+              <p>Системы управления качеством соответствуют международным стандартам (ISO 9001:2015, 22000:2018, 22716:2007 (GMP). Собственные аккредитованные лаборатории: физико-химическая и микробиологическая.</p>
+              <p>Минимизация риска выпуска некачественной продукции.</p>
+              <h4>Подзаголовок 3</h4>
+              <ul>
+                <li>Системы управления качеством соответствуют международным стандартам (ISO 9001:2015, 22000:2018, 22716:2007 (GMP). Собственные аккредитованные лаборатории: физико-химическая и микробиологическая.</li>
+                <li>Минимизация риска выпуска некачественной продукции.</li>
+              </ul>
+            </div>
+            <!-- /.content__text -->
+
+            <picture class="content__picture lazy lazy--preloader">
+              <img class="image image--cover lazy__item" data-src="assets/images/layout/page/about/content/picture.jpg" alt="">
+            </picture>
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <include src="layout/section/brands.html"></include>
+
+      <section id="cp-about-promo" class="section section--bg">
+        <div class="container">
+          <div class="promo">
+            <div class="promo__wrapper">
+              <div class="section__header">
+                <h2 class="section__title">
+                  только натуральные компоненты
+                </h2>
+              </div>
+              <!-- /.section__header -->
+
+              <div class="promo__text" data-editor="">
+                <p>This is designed to help you explore your unique coaching approach and uncover the strengths that define your style. Understanding your coaching style is essential for self-discovery and personal growth, enabling you to enhance your skills and adapt your methods to better support those you coach. Dive in and embark on a journey of self-exploration that will take your coaching abilities to new heights!</p>
+              </div>
+              <!-- /.promo__text -->
+
+              <div class="section__action">
+                <a class="button button-primary" href=""><span>Наша продукция</span></a>
+              </div>
+              <!-- /.section__action -->
+            </div>
+            <!-- /.promo__wrapper -->
+
+            <picture class="promo__background lazy">
+              <source media="(max-width: 540px)">
+              <source media="(max-width: 800px)">
+              <img class="image image--cover lazy__item" data-src="assets/images/layout/page/about/promo/bg.jpg" alt="">
+            </picture>
+          </div>
+          <!-- /.promo -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <include src="layout/section/catalog.html">
+        {
+        "title": "наша продукция"
+        }
+      </include>
+
+      <include src="layout/section/vacancy.html">
+        {
+        "title": "Акции"
+        }
+      </include>
+
+      <include src="layout/section/blog.html">
+        {
+        "title": "Статьи"
+        }
+      </include>
+
+      <include src="layout/section/callback.html">
+        {
+        "title": "Хиты продаж"
+        }
+      </include>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>
