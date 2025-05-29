@@ -1,0 +1,18 @@
+#op-search-content {
+  .content {
+    &__form {
+      margin-bottom: 50px;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 50px 20px;
+    }
+
+    &__empty {
+      font-size: var(--font-text-big);
+      text-align: center;
+    }
+  }
+}

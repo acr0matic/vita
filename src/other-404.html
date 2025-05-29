@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="op-error" class="page__body">
+      <section id="op-error-content" class="section">
+        <div class="container">
+          <div class="content">
+            <div class="content__wrapper">
+              <div class="section__header">
+                <h1 class="section__title">
+                  Страница не найдена
+                </h1>
+              </div>
+              <!-- /.section__header -->
+
+              <div class="content__code">
+                404
+              </div>
+              <!-- /.content__code -->
+
+              <div class="content__action">
+                <a class="button button-primary" href=""><span>В каталог</span></a>
+                <a class="button button-secondary" href=""><span>На главную</span></a>
+              </div>
+              <!-- /.content__action -->
+            </div>
+            <!-- /.content__wrapper -->
+
+            <picture class="content__background lazy">
+              <source media="(max-width: 540px)">
+              <source srcset="assets/images/layout/other/error/bg_tablet.jpg" media="(max-width: 800px)">
+              <img class="image image--cover lazy__item" data-src="assets/images/layout/other/error/bg.jpg" alt="">
+            </picture>
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <include src="layout/section/callback.html"></include>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 
   &--search {
     .input__field {
-      padding-left: 40px;
+      padding-left: 44px;
     }
 
     svg {
@@ -31,6 +31,10 @@
 
     font-size: var(--font-text-regular);
     transition: $transition-time ease;
+
+    &--border {
+      border-color: #dfd5ba;
+    }
 
     &::placeholder {
       color: #353535;

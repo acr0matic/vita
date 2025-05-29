@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="op-search" class="page__body">
+      <include src="layout/block/breadcrumbs.html"></include>
+
+      <section id="op-search-content" class="section">
+        <div class="container">
+          <div class="section__header">
+            <h1 class="section__title">
+              Поиск
+            </h1>
+          </div>
+          <!-- /.section__header -->
+
+          <div class="content">
+            <div class="content__form">
+              <form action="" method="get">
+                <div class="input input--search">
+                  <svg>
+                    <use href="assets/images/icons/package.svg#icon-search"></use>
+                  </svg>
+                  <input type="search" placeholder="Средство для вечной молодости" autocomplete="off" name="s" class="input__field input__field--border">
+                </div>
+                <!-- /.input -->
+              </form>
+            </div>
+            <!-- /.content__form -->
+
+            <div class="content__result">
+              <div class="content__grid">
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/1.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/2.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/3.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/4.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+              </div>
+              <!-- /.content__grid -->
+
+              <div class="content__empty" style="display: none;">
+                <p>Ничего не найдено!</p>
+              </div>
+              <!-- /.content__empty -->
+            </div>
+            <!-- /.content__result -->
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.container -->
+      </section>
+
+      <include src="layout/section/callback.html"></include>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+#op-error-content {
+  position: relative;
+
+  .content {
+    margin-top: 89px;
+    padding-top: 168px;
+    padding-bottom: 210px;
+
+    &__wrapper {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+
+      .section__header {
+        margin-bottom: 0;
+      }
+    }
+
+    &__code {
+      color: $color-text__white;
+
+      font-size: 450px;
+      font-family: $font-heading;
+      line-height: 1;
+    }
+
+    &__action {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: -40px;
+    }
+
+    &__background {
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
