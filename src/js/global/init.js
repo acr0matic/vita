@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 /* Прописываются все инициализации и первичные параметры для скриптов */
 
 import LazyLoad from 'vanilla-lazyload';
 import HystModal from "../libs/hystmodal";
+import "../libs/smoothscroll";
 
 /* Ленивая загрузка */
 

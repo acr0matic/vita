@@ -1,0 +1,153 @@
+#cp-contact-content {
+  .content {
+    &__main,
+    &__callback {
+      display: grid;
+      gap: 20px;
+    }
+
+    &__main {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    &__callback {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 100px;
+    }
+
+    &__map {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+
+    &__block {
+      max-width: 590px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $palette-yellow--dark;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 20px;
+
+      font-weight: $weight-Bold;
+      font-size: var(--font-text-large);
+    }
+
+    &__row {
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
+
+      &--icon > a,
+      &--icon {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+      }
+
+      &--text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+
+      &--inline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+      }
+
+      b {
+        font-weight: $weight-Bold;
+      }
+
+      svg {
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        margin-top: -3px;
+
+        color: $color-text__green;
+      }
+    }
+
+    &__card {
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      border-radius: 20px;
+
+      .content__row:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        inset: 0;
+
+        background: $palette-yellow--pale;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        right: -32px;
+        bottom: -74px;
+
+        display: block;
+        width: 200px;
+        height: 200px;
+
+        border-radius: $border-radius-round;
+
+        background-color: rgba($color: $palette-white, $alpha: 0.82);
+        filter: blur(50px);
+      }
+
+      &--social {
+        display: flex;
+        flex-direction: column;
+
+        .social a {
+          width: 58px;
+          height: 58px;
+        }
+
+        &::before {
+          background-color: $palette-yellow;
+        }
+      }
+    }
+
+    &__action {
+      margin-top: auto;
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}

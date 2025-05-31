@@ -5184,6 +5184,7 @@ __metadata:
     sass: "npm:^1.69.5"
     sass-loader: "npm:^13.3.2"
     sharp: "npm:^0.33.5"
+    smoothscroll-for-websites: "npm:^1.5.1"
     source-map-loader: "npm:^4.0.2"
     style-loader: "npm:^3.3.3"
     stylelint: "npm:^15.11.0"
@@ -11653,6 +11654,13 @@ __metadata:
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
   checksum: 10c0/a16775323e1404dd43fabafe7460be13a471e021637bc7889468eb45ce6a6b207261f454e4e530a19500cc962c4cc5348583520843b363f4193cee5c00e1e539
+  languageName: node
+  linkType: hard
+
+"smoothscroll-for-websites@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "smoothscroll-for-websites@npm:1.5.1"
+  checksum: 10c0/4d5c58b6f2ea1cec212da261a9e17d8a3f1a82267f255d5fbd29a9fd2a3763fd9d8dee0b294a8c702c13877d3a304b1a9ed85436eafe218d89a6d8c9734f1702
   languageName: node
   linkType: hard
 

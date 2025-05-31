@@ -83,6 +83,7 @@
     "imask": "^7.6.1",
     "modern-normalize": "^3.0.1",
     "overlayscrollbars": "^2.11.3",
+    "smoothscroll-for-websites": "^1.5.1",
     "swiper": "^11.2.7",
     "vanilla-lazyload": "^17.9.0"
   }

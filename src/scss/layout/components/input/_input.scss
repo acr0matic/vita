@@ -33,7 +33,7 @@
     transition: $transition-time ease;
 
     &--border {
-      border-color: #dfd5ba;
+      border-color: $palette-yellow--dark;
     }
 
     &::placeholder {

@@ -1,6 +1,6 @@
 .accordion {
   padding: 20px;
-  border: 1px solid #dfd5ba;
+  border: 1px solid $palette-yellow--dark;
   border-radius: var(--border-radius);
 
   transition: $transition-time ease;
