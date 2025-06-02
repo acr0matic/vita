@@ -1,5 +1,9 @@
 #sp-product-content {
   .content {
+    @include breakpoint($breakpoint-tablet) {
+      grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: 590px 1fr;
     gap: 0 20px;
@@ -9,23 +13,49 @@
     }
 
     .section__title {
+      @include breakpoint($breakpoint-tablet) {
+        text-align: center;
+      }
+
       text-align: left;
     }
 
     &__gallery {
+      @include breakpoint($breakpoint-tablet) {
+        grid-row: 2 / 3;
+        grid-column: auto;
+
+        margin-bottom: 20px;
+      }
+
       grid-row: 1 / 4;
       grid-column: 1 / 2;
       min-width: 0;
     }
 
     &__header {
+      @include breakpoint($breakpoint-tablet) {
+        grid-row: 1 / 2;
+        margin-bottom: 20px;
+      }
+
       margin-bottom: 30px;
     }
 
     &__info {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      @include breakpoint($breakpoint-tablet) {
+        align-items: center;
+      }
+
+      @include breakpoint($breakpoint-mobile) {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+      }
+
+      display: flex;
       align-items: start;
+      justify-content: space-between;
     }
 
     &__label {
@@ -36,6 +66,10 @@
     }
 
     &__rating {
+      @include breakpoint($breakpoint-mobile) {
+        margin-left: 0;
+      }
+
       display: flex;
       gap: 20px;
       align-items: center;
@@ -50,9 +84,15 @@
     }
 
     &__size {
-      display: flex;
-      gap: 10px;
-      align-items: center;
+      p {
+        margin-bottom: 10px;
+      }
+
+      .content__wrapper {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
     }
 
     &__price {

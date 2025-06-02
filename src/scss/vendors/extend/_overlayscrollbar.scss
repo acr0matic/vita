@@ -7,6 +7,10 @@ body > * .os-scrollbar {
   --os-handle-bg: rgba(42, 55, 74, 0.35);
   --os-handle-bg-hover: rgba(42, 55, 74, 0.75);
   --os-handle-bg-active: rgba(42, 55, 74, 1);
+
+  @include breakpoint($breakpoint-tablet) {
+    --os-size: 8px;
+  }
 }
 
 .os-scrollbar-handle {

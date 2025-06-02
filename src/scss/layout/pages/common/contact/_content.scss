@@ -7,15 +7,32 @@
     }
 
     &__main {
+      @include breakpoint($breakpoint-notebook) {
+        grid-template-columns: 1fr;
+      }
+
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     &__callback {
+      @include breakpoint($breakpoint-desktop) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+      }
+
       grid-template-columns: repeat(4, minmax(0, 1fr));
       margin-top: 100px;
     }
 
     &__map {
+      @include breakpoint($breakpoint-notebook) {
+        aspect-ratio: 16 / 9;
+      }
+
       width: 100%;
       aspect-ratio: 1 / 1;
 
@@ -73,7 +90,7 @@
       &--inline {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 8px 40px;
         align-items: center;
       }
 
@@ -130,6 +147,10 @@
       &--social {
         display: flex;
         flex-direction: column;
+
+        .social {
+          margin-bottom: 24px;
+        }
 
         .social a {
           width: 58px;

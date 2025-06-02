@@ -33,6 +33,7 @@ CSS-переменные. Во всех других случаях - SASS.
   @include breakpoint($breakpoint-tablet) {
     --font-title-large: 38px;
     --font-title-medium: 28px;
+    --font-title-small: 18px;
     --font-text-large: 16px;
   }
 }

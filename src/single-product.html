@@ -121,15 +121,19 @@
 
             <form class="content__action">
               <div class="content__size">
-                <label class="radio">
-                  <input name="size" type="radio">
-                  <span class="radio__label">30</span>
-                </label>
+                <p>Объем/мл</p>
+                <div class="content__wrapper">
+                  <label class="radio">
+                    <input name="size" type="radio">
+                    <span class="radio__label">30</span>
+                  </label>
 
-                <label class="radio">
-                  <input name="size" type="radio">
-                  <span class="radio__label">50</span>
-                </label>
+                  <label class="radio">
+                    <input name="size" type="radio">
+                    <span class="radio__label">50</span>
+                  </label>
+                </div>
+                <!-- /.content__wrapper -->
               </div>
               <!-- /.content__size -->
 
@@ -142,7 +146,7 @@
               <div class="content__counter">
                 <div class="b-counter">
                   <span class="b-counter__minus"></span>
-                  <input class="b-counter__count" name="count" type="number" min="1">
+                  <input class="b-counter__count" value="1" name="count" type="number" min="1">
                   <span class="b-counter__plus"></span>
                 </div>
                 <!-- /.b-counter -->

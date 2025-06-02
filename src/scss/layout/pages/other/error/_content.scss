@@ -1,7 +1,14 @@
 #op-error-content {
   position: relative;
+  margin-bottom: -40px;
 
   .content {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 73px;
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
     margin-top: 89px;
     padding-top: 168px;
     padding-bottom: 210px;
@@ -12,11 +19,23 @@
       text-align: center;
 
       .section__header {
+        @include breakpoint($breakpoint-notebook) {
+          margin-bottom: 32px;
+        }
+
         margin-bottom: 0;
       }
     }
 
     &__code {
+      @include breakpoint($breakpoint-notebook) {
+        font-size: 350px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        font-size: 190px;
+      }
+
       color: $color-text__white;
 
       font-size: 450px;
@@ -25,6 +44,14 @@
     }
 
     &__action {
+      @include breakpoint($breakpoint-notebook) {
+        margin-top: 0;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        margin-top: 40px;
+      }
+
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
