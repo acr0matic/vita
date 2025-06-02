@@ -1,0 +1,38 @@
+.radio {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+  transition: $transition-time ease;
+
+  @media (hover: hover) {
+    &:hover .radio__label {
+      background-color: $palette-yellow;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ .radio__label {
+      background-color: $palette-green;
+      color: $color-text__white;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 50px;
+
+    border-radius: var(--border-radius);
+    background-color: $palette-yellow--pale;
+    color: $color-text__primary;
+    font-weight: $weight-SemiBold;
+
+    transition: $transition-time ease;
+  }
+}

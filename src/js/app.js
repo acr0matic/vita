@@ -20,5 +20,6 @@ import './layout/page/single-blog';
 import './component/accordion';
 import './component/form';
 import './component/submenu';
+import './component/gallery';
 
 import './utils/video-optimization';
