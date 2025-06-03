@@ -53,12 +53,33 @@
 
   &__container {
     position: relative;
+
+    width: 100%;
+    max-width: 700px;
+
+    padding: 30px 40px;
+
+    border-radius: var(--border-radius-big);
+    background-color: $palette-yellow;
   }
 
   &__header {
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   &__title {
+    margin-bottom: 10px;
+
+    font-size: var(--font-title-medium);
+    font-family: $font-heading;
+
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   &__close {
@@ -83,6 +104,17 @@
   }
 
   &__content {
+  }
+
+  .form__privacy {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .form__action {
+    margin-top: 20px;
+    text-align: center;
   }
 }
 

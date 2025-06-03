@@ -2,7 +2,8 @@
   <div class="hystmodal__wrap">
     <div class="hystmodal__window modal__container" role="dialog" aria-modal="true">
       <div class="modal__header">
-        <p class="modal__title">Заголовок формы</p>
+        <p class="modal__title">задать вопрос</p>
+        <p class="modal__subtitle">Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время</p>
         <button data-hystclose class="hystmodal__close">Закрыть</button>
       </div>
       <!-- /.modal__header -->
@@ -16,23 +17,35 @@
             </div>
             <!-- /.input -->
 
+            <div class="input">
+              <input placeholder="" autocomplete="off" type="text" name="user_name" class="input__field">
+              <span class="input__label">Телефон</span>
+            </div>
+            <!-- /.input -->
+
+            <div class="input">
+              <input placeholder="" autocomplete="off" type="text" name="user_name" class="input__field">
+              <span class="input__label">E-mail</span>
+            </div>
+            <!-- /.input -->
+
             <div class="input input--box">
-              <textarea placeholder="" class="input__field" name="user_message"></textarea>
+              <textarea placeholder="" rows="4" class="input__field" name="user_message"></textarea>
               <span class="input__label">Комментарий</span>
             </div>
             <!-- /.input -->
           </div>
           <!-- /.form__wrapper -->
 
-          <div class="form__action">
-            <button class="button button-primary"><span>Отправить</span></button>
-          </div>
-          <!-- /.form__action -->
-
           <div class="form__privacy">
             <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и <span><a class="link" href="">политикой конфиденциальности</a></span></p>
           </div>
           <!-- /.form__privacy -->
+
+          <div class="form__action">
+            <button class="button button-primary"><span>Отправить</span></button>
+          </div>
+          <!-- /.form__action -->
         </form>
       </div>
       <!-- /.modal__content -->

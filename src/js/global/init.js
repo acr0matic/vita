@@ -4,6 +4,7 @@
 import LazyLoad from 'vanilla-lazyload';
 import HystModal from "../libs/hystmodal";
 import "../libs/smoothscroll";
+import { StyleClass } from '../global/settings';
 
 /* Ленивая загрузка */
 
@@ -27,10 +28,18 @@ export const lazyBackgroundController = new LazyLoad({
 
 /* Модальные окна */
 
+window.addEventListener('click', (e) => {
+  const target = e.target;
+  if (target.closest('[data-modal]')) document.body.classList.add(StyleClass.body.scroll);
+});
+
 export const modalManager = new HystModal({
   linkAttributeName: "data-modal",
   waitTransitions: true,
-  backscroll: false,
+  backscroll: true,
+  afterClose: function () {
+    document.body.classList.remove(StyleClass.body.scroll);
+  },
 });
 
 window.modalManager = modalManager;

@@ -3,7 +3,7 @@
 
   &--search {
     .input__field {
-      padding-left: 44px;
+      padding: 10px 20px 10px 44px;
     }
 
     svg {
@@ -18,12 +18,18 @@
     }
   }
 
+  &--box {
+    .input__field {
+      resize: none;
+    }
+  }
+
   &__field {
     width: 100%;
-    padding: 10px;
+    padding: 22px 20px 10px;
 
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     outline: none;
 
     background-color: $palette-white;
@@ -42,7 +48,7 @@
 
     &:focus + .input__label,
     &:not(:placeholder-shown) + .input__label {
-      top: 4px;
+      top: 6px;
       transform: scale(0.75);
     }
 
@@ -62,8 +68,8 @@
 
   &__label {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 18px;
+    left: 20px;
 
     color: $color-text__primary;
     pointer-events: none;
