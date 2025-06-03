@@ -7,6 +7,10 @@ new Swiper('#sp-blog-related .swiper', {
   spaceBetween: 20,
   autoHeight: true,
 
+  pagination: {
+    el: '#sp-blog-related .swiper-pagination',
+  },
+
   breakpoints: {
     540: {
       slidesPerView: 2,

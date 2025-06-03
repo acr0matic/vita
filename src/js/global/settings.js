@@ -19,6 +19,7 @@ export const StyleClass = {
 // Для адаптивности скриптов
 export const breakpoint = {
   mobile: '(max-width: 800px)',
+  tablet: '(max-width: 1200px)',
 };
 
 // Базовые настройки для MicroModal.js

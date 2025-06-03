@@ -32,7 +32,7 @@
 
     .swiper-pagination {
       @include breakpoint($breakpoint-tablet) {
-        display: block;
+        display: flex;
       }
 
       display: none;

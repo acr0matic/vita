@@ -26,4 +26,41 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008' stroke='%23292D32' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     }
   }
+
+  &-pagination {
+    @include breakpoint($breakpoint-notebook) {
+      display: flex;
+    }
+
+    position: relative;
+    z-index: 2;
+    inset: 0;
+
+    display: none;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+
+    &-bullet {
+      width: 15px;
+      height: 7px;
+
+      margin: 0 !important;
+
+      border: 1px solid $palette-green;
+      border-radius: 3px;
+
+      background-color: transparent;
+      opacity: 1;
+
+      transition: $transition-time ease;
+
+      &-active {
+        width: 30px;
+        background-color: $palette-green;
+      }
+    }
+  }
 }

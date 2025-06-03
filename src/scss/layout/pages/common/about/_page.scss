@@ -1,0 +1,10 @@
+#cp-about {
+  #s-blog {
+    @include breakpoint($breakpoint-tablet) {
+      padding-bottom: 120px;
+    }
+
+    margin-bottom: -60px;
+    padding-bottom: 160px;
+  }
+}

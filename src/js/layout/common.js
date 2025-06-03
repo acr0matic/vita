@@ -4,7 +4,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { OverlayScrollbars } from 'overlayscrollbars';
-import { StyleClass } from "../global/settings";
+import { StyleClass, breakpoint } from "../global/settings";
+import { MediaQuery } from "../global/func";
 
 import { Swiper } from "swiper";
 import { Pagination } from "swiper/modules";
@@ -36,13 +37,40 @@ new Swiper('#s-brands .swiper', {
   spaceBetween: 20,
   autoHeight: true,
 
+  pagination: {
+    el: '#s-brands .swiper-pagination',
+  },
+
   breakpoints: {
     540: {
       slidesPerView: 2,
     },
 
-    991: {
+    800: {
+      slidesPerView: 2.5,
+    },
+
+    1200: {
       slidesPerView: 4,
     }
   }
 });
+
+if (MediaQuery(breakpoint.tablet)) {
+  new Swiper('#s-blog .swiper', {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+
+    pagination: {
+      el: '#s-blog .swiper-pagination',
+    },
+
+    breakpoints: {
+      540: {
+        slidesPerView: 1.6
+      }
+    }
+  });
+}

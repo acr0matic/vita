@@ -11,6 +11,10 @@ if (MediaQuery(breakpoint.mobile)) {
     spaceBetween: 20,
     autoHeight: true,
 
+    pagination: {
+      el: '#cp-catalog-brands .swiper-pagination',
+    },
+
     breakpoints: {
       540: {
         slidesPerView: 2,

@@ -10,7 +10,7 @@
   .blog {
     &__content {
       .swiper {
-        @include breakpoint($breakpoint-tablet) {
+        @include breakpoint($breakpoint-notebook) {
           overflow: visible;
         }
       }
@@ -21,9 +21,10 @@
           gap: 20px;
         }
 
-        @include breakpoint($breakpoint-tablet) {
+        @include breakpoint($breakpoint-notebook) {
           display: flex;
           grid-area: 0;
+          gap: 0;
         }
 
         display: grid;
@@ -40,12 +41,20 @@
       }
 
       .card-blog__picture {
+        @include breakpoint($breakpoint-notebook) {
+          aspect-ratio: 16 / 10;
+        }
+
         height: 100%;
         aspect-ratio: initial;
       }
     }
 
     &__background {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
       position: absolute;
       top: 0;
       left: 0;
