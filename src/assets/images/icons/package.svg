@@ -107,4 +107,36 @@
     <path d="M9.375 22.5H35.625" stroke="currentColor" stroke-width="2" stroke-linecap="round"
       stroke-linejoin="round" />
   </symbol>
+
+  <symbol id="icon-guard" width="100%" height="100%" viewBox="0 0 20 20" fill="none">
+    <path
+      d="M10.0026 18.3332C10.0026 18.3332 16.6693 14.9998 16.6693 9.99984V4.1665L10.0026 1.6665L3.33594 4.1665V9.99984C3.33594 14.9998 10.0026 18.3332 10.0026 18.3332Z"
+      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <symbol id="icon-exit" width="100%" height="100%" viewBox="0 0 20 20" fill="none">
+    <path
+      d="M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5"
+      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M13.3359 14.1668L17.5026 10.0002L13.3359 5.8335" stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M17.5 10H7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+
+  <symbol id="icon-exit-alt" width="100%" height="100%" viewBox="0 0 55 54" fill="none">
+    <path
+      d="M20.6658 47.9856H11.5553C10.3471 47.9856 9.18848 47.5056 8.3342 46.6514C7.47993 45.7971 7 44.6384 7 43.4303V11.5435C7 10.3354 7.47993 9.17676 8.3342 8.32248C9.18848 7.46821 10.3471 6.98828 11.5553 6.98828H20.6658"
+      stroke="#D44C4F" stroke-width="1.51871" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M36.6094 38.8749L47.9975 27.4868L36.6094 16.0986" stroke="#D44C4F"
+      stroke-width="1.51871" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M47.9956 27.4868H20.6641" stroke="#D44C4F" stroke-width="1.51871"
+      stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <symbol id="icon-arrow-right" width="100%" height="100%" viewBox="0 0 56 54" fill="none">
+    <path d="M35.375 45L53.7083 27M53.7083 27L35.375 9M53.7083 27L1 27" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" />
+  </symbol>
 </svg>

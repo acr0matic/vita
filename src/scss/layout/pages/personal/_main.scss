@@ -1,0 +1,10 @@
+@import "home/content";
+
+[id^="pp-"] {
+  .page__background {
+    position: absolute;
+    z-index: -1;
+    top: 89px;
+    left: 0;
+  }
+}
