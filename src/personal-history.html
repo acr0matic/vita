@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="pp-history" class="page__body">
+      <include src="layout/block/breadcrumbs.html"></include>
+
+      <div class="container">
+        <section class="page__header">
+          <div class="section__header">
+            <h1 class="section__title">Купленные товары</h1>
+          </div>
+          <!-- /.section__header -->
+        </section>
+        <!-- /.page__header -->
+
+        <div class="page__grid">
+          <div class="page__side">
+            <nav class="nav nav--side">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    <svg>
+                      <use href="assets/images/icons/package.svg#icon-account"></use>
+                    </svg>
+
+                    Мой профиль
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    <svg>
+                      <use href="assets/images/icons/package.svg#icon-cart"></use>
+                    </svg>
+
+                    Мои заказы
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    <svg>
+                      <use href="assets/images/icons/package.svg#icon-cart"></use>
+                    </svg>
+
+                    Купленные товары
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    <svg>
+                      <use href="assets/images/icons/package.svg#icon-guard"></use>
+                    </svg>
+
+                    Настройка и безопасность
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    <svg>
+                      <use href="assets/images/icons/package.svg#icon-exit"></use>
+                    </svg>
+
+                    Выйти
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav -->
+          </div>
+          <!-- /.page__side -->
+
+          <div class="page__content">
+            <section id="pp-history-content" class="section">
+              <div class="content__grid">
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/1.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/2.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/3.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/1.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/2.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+
+                <include src="layout/template/card/product.html">
+                  {
+                  "image": "assets/images/content/product/3.jpg",
+                  "title": "Тушь для ресниц «Формула преображения®»",
+                  "price": "204 ₽"
+                  }
+                </include>
+              </div>
+              <!-- /.content__grid -->
+            </section>
+          </div>
+          <!-- /.page__content -->
+        </div>
+        <!-- /.page__grid -->
+      </div>
+      <!-- /.container -->
+
+      <picture class="page__background lazy">
+        <img class="image image--cover lazy__item" data-src="assets/images/layout/personal/bg.svg" alt="">
+      </picture>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>
