@@ -1,5 +1,7 @@
 #pp-profile-content {
   .content {
+    position: relative;
+    overflow: hidden;
     padding: 40px;
     border-radius: var(--border-radius-big);
     background-color: $palette-yellow--pale;
@@ -32,6 +34,18 @@
 
     &__action {
       margin-top: 32px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 50%;
+      right: -12px;
+
+      height: 105%;
+      aspect-ratio: 1 / 1;
+      color: #f3ecda;
+
+      transform: translateY(-50%);
     }
   }
 }
