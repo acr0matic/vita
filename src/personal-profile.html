@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="pp-profile" class="page__body">
+      <include src="layout/block/breadcrumbs.html"></include>
+
+      <div class="container">
+        <section class="page__header">
+          <div class="section__header">
+            <h1 class="section__title">мой профиль</h1>
+          </div>
+          <!-- /.section__header -->
+        </section>
+        <!-- /.page__header -->
+
+        <div class="page__grid">
+          <include src="layout/side.html"></include>
+
+          <div class="page__content">
+            <section id="pp-profile-content" class="section">
+              <div class="content">
+                <div class="content__header">
+                  <p>Александра</p>
+                </div>
+                <!-- /.content__header -->
+
+                <div class="content__info">
+                  <div class="content__block">
+                    <p>Телефон</p>
+                    <p>Вы пока не добавили телефон</p>
+                  </div>
+                  <!-- /.content__block -->
+
+                  <div class="content__block">
+                    <p>Вы пока не добавили телефон</p>
+                    <p>vita@почта.ru</p>
+                  </div>
+                  <!-- /.content__block -->
+
+                  <div class="content__block">
+                    <p>ИНН</p>
+                    <p>00 00 00000 0</p>
+                  </div>
+                  <!-- /.content__block -->
+                </div>
+                <!-- /.content__info -->
+
+                <div class="content__action">
+                  <a href="" class="button button-primary"><span>Изменить данные</span></a>
+                </div>
+                <!-- /.content__action -->
+              </div>
+              <!-- /.content -->
+            </section>
+          </div>
+          <!-- /.page__content -->
+        </div>
+        <!-- /.page__grid -->
+      </div>
+      <!-- /.container -->
+
+      <picture class="page__background lazy">
+        <img class="image image--cover lazy__item" data-src="assets/images/layout/personal/bg.svg" alt="">
+      </picture>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>

@@ -159,12 +159,19 @@
 
       background-color: $palette-white;
       font-size: var(--font-text-big);
+      line-height: 1;
 
       @media (hover: hover) {
         &:hover {
           background-color: #e2d2c5;
           color: $color-text__primary;
         }
+      }
+
+      &.current {
+        background-color: $palette-green;
+        color: $color-text__white;
+        pointer-events: none;
       }
 
       svg {

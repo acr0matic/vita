@@ -1,0 +1,37 @@
+#pp-profile-content {
+  .content {
+    padding: 40px;
+    border-radius: var(--border-radius-big);
+    background-color: $palette-yellow--pale;
+
+    &__header {
+      margin-bottom: 20px;
+      font-weight: $weight-Bold;
+      font-size: var(--font-text-large);
+    }
+
+    &__info {
+    }
+
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
+      p {
+        &:nth-child(1) {
+          margin-bottom: 8px;
+          color: $color-text__gray;
+        }
+
+        &:nth-child(2) {
+          font-weight: $weight-Medium;
+        }
+      }
+    }
+
+    &__action {
+      margin-top: 32px;
+    }
+  }
+}
