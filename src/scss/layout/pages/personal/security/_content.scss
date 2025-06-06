@@ -1,0 +1,42 @@
+#pp-security-content {
+  .content {
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    border-radius: var(--border-radius-big);
+    background-color: $palette-yellow--pale;
+
+    &__form {
+      max-width: 600px;
+
+      .form__privacy {
+        margin-top: 20px;
+      }
+
+      .form__action {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .button-outline {
+        border-color: $palette-black;
+      }
+    }
+
+    &__action {
+      margin-top: 32px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: -12px;
+      right: -35px;
+
+      width: 410px;
+      aspect-ratio: 1 / 1;
+      color: #f3ecda;
+    }
+  }
+}

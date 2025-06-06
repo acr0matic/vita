@@ -24,6 +24,47 @@
     }
   }
 
+  &--password {
+    .input__icon {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      color: #ccb7a4;
+      transition: $transition-time ease;
+
+      &:nth-child(2) {
+        position: absolute;
+        inset: 0;
+
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &.is-show {
+      svg {
+        &:nth-child(1) {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &:nth-child(2) {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
   &__field {
     width: 100%;
     padding: 22px 20px 10px;

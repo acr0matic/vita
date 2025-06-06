@@ -9,6 +9,7 @@ export class Form {
     this.phone = form.querySelector('input[type=tel]');
     this.email = form.querySelector('input[type=email]');
     this.name = form.querySelector('input[name=user_name]');
+    this.password = form.querySelectorAll('input[type=password]');
 
     this.country = form.querySelector('select[data-target="country"]');
 
@@ -23,6 +24,7 @@ export class Form {
     };
 
     this.inputMask();
+    this.passwordShow();
     if (this.country) this.countrySelect();
   }
 
@@ -44,6 +46,20 @@ export class Form {
     }
 
     if (this.name) IMask(this.name, { mask: this.mask.name });
+  }
+
+  passwordShow() {
+    for (const password of this.password) {
+      const parent = password.parentNode;
+      const target = parent.querySelector('.input__icon');
+
+      if (target) {
+        target.addEventListener('click', () => {
+          parent.classList.toggle('is-show');
+          password.type = (parent.classList.contains('is-show')) ? 'text' : 'password';
+        });
+      }
+    }
   }
 
   countrySelect() {

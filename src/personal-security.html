@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <include src="layout/menu.html"></include>
+
+  <main>
+    <div id="pp-security" class="page__body">
+      <include src="layout/block/breadcrumbs.html"></include>
+
+      <div class="container">
+        <section class="page__header">
+          <div class="section__header">
+            <h1 class="section__title">Настройка и безопасность</h1>
+          </div>
+          <!-- /.section__header -->
+        </section>
+        <!-- /.page__header -->
+
+        <div class="page__grid">
+          <include src="layout/side.html"></include>
+
+          <div class="page__content">
+            <section id="pp-security-content" class="section">
+              <div class="content">
+                <div class="content__form">
+                  <form action="" class="form form-custom">
+                    <div class="form__wrapper">
+                      <div class="input">
+                        <input placeholder="" autocomplete="off" type="text" name="user_company" class="input__field">
+                        <span class="input__label">Название компании</span>
+                      </div>
+                      <!-- /.input -->
+
+                      <div class="input">
+                        <input placeholder="" autocomplete="off" type="email" name="user_email" class="input__field">
+                        <span class="input__label">E-mail</span>
+                      </div>
+                      <!-- /.input -->
+
+                      <div class="input">
+                        <input placeholder="" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                        <span class="input__label">Телефон</span>
+                      </div>
+                      <!-- /.input -->
+
+                      <div class="input">
+                        <input placeholder="" autocomplete="off" type="number" name="user_inn" class="input__field">
+                        <span class="input__label">ИНН</span>
+                      </div>
+                      <!-- /.input -->
+
+                      <div class="input input--password">
+                        <input placeholder="" autocomplete="off" type="password" name="user_password" class="input__field">
+                        <span class="input__label">Пароль</span>
+
+                        <div class="input__icon">
+                          <svg>
+                            <use href="assets/images/icons/package.svg#icon-password-hidden"></use>
+                          </svg>
+                          <svg>
+                            <use href="assets/images/icons/package.svg#icon-password-show"></use>
+                          </svg>
+                        </div>
+                        <!-- /.input__icon -->
+                      </div>
+                      <!-- /.input -->
+
+                      <div class="input input--password">
+                        <input placeholder="" autocomplete="off" type="password" name="user_password_again" class="input__field">
+                        <span class="input__label">Введите пароль еще раз</span>
+
+                        <div class="input__icon">
+                          <svg>
+                            <use href="assets/images/icons/package.svg#icon-password-hidden"></use>
+                          </svg>
+                          <svg>
+                            <use href="assets/images/icons/package.svg#icon-password-show"></use>
+                          </svg>
+                        </div>
+                        <!-- /.input__icon -->
+                      </div>
+                      <!-- /.input -->
+                    </div>
+                    <!-- /.form__wrapper -->
+
+                    <div class="form__privacy">
+                      <p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и <span><a class="link" href="">политикой конфиденциальности</a></span></p>
+                    </div>
+                    <!-- /.form__privacy -->
+
+                    <div class="form__action">
+                      <button class="button button-primary"><span>Сохранить</span></button>
+                      <button class="button button-outline"><span>Сбросить</span></button>
+                    </div>
+                    <!-- /.form__action -->
+                  </form>
+                </div>
+                <!-- /.content__form -->
+
+                <div class="content__logo">
+                  <svg>
+                    <use href="assets/images/icons/package.svg#logo"></use>
+                  </svg>
+                </div>
+                <!-- /.content__logo -->
+              </div>
+              <!-- /.content -->
+            </section>
+          </div>
+          <!-- /.page__content -->
+        </div>
+        <!-- /.page__grid -->
+      </div>
+      <!-- /.container -->
+
+      <picture class="page__background lazy">
+        <img class="image image--cover lazy__item" data-src="assets/images/layout/personal/bg.svg" alt="">
+      </picture>
+    </div>
+    <!-- /.page__body -->
+  </main>
+
+  <include src="layout/footer.html"></include>
+</body>
+
+</html>
