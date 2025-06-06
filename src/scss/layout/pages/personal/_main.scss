@@ -1,6 +1,10 @@
 @import "home/content";
-@import "history/content";
+
+@import "history-product/content";
+@import "history-order/content";
+
 @import "profile/content";
+
 @import "security/content";
 
 [id^="pp-"] {

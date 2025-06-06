@@ -38,8 +38,8 @@
 
     li {
       padding: 12px 20px;
-      border-top: 1px solid #f7ecd7;
-      color: #a29885;
+      border-top: 1px solid $palette-yellow;
+      color: $color-text__yellow--pale;
     }
 
     &.is-open {
@@ -78,7 +78,7 @@
     }
 
     .nav__item {
-      border-bottom: 1px solid #f7ecd7;
+      border-bottom: 1px solid $palette-yellow;
     }
 
     .nav__link {
