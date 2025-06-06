@@ -1,0 +1,58 @@
+#pp-registration-content {
+  margin-top: 0;
+
+  .content {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 720px;
+    margin: 0 auto 100px;
+    padding: 40px;
+
+    border-radius: var(--border-radius-big);
+    background-color: $palette-yellow--pale;
+
+    .section__header {
+      margin-bottom: 20px;
+    }
+
+    &__action {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 10px;
+
+      .button.is-active {
+        background-color: $palette-black;
+        color: $color-text__white;
+        pointer-events: none;
+      }
+
+      .button-outline {
+        border-color: $palette-black;
+      }
+    }
+
+    &__form {
+      max-width: 600px;
+
+      .form__privacy {
+        margin-top: 20px;
+      }
+
+      .form__action {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .button {
+        width: 100%;
+        border-color: $palette-black;
+      }
+    }
+  }
+}
