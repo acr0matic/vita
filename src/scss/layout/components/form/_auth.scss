@@ -1,0 +1,17 @@
+.form-auth {
+  .form__privacy {
+    margin-top: 20px;
+  }
+
+  .form__action {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .button {
+    width: 100%;
+    border-color: $palette-black;
+  }
+}

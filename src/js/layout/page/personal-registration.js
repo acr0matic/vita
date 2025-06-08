@@ -1,5 +1,4 @@
 import { Swiper } from "swiper";
-import { EffectFade } from "swiper/modules";
 
 if (document.querySelector('#pp-registration')) {
   const controls = document.querySelectorAll('#pp-registration .content__action .button');

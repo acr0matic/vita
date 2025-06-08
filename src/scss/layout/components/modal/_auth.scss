@@ -1,0 +1,48 @@
+.modal-auth {
+  .modal__container {
+    padding-bottom: 54px;
+  }
+
+  .modal__action {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    .button.is-active {
+      background-color: $palette-black;
+      color: $color-text__white;
+      pointer-events: none;
+    }
+
+    .button-outline {
+      border-color: $palette-black;
+    }
+  }
+
+  .modal__additional {
+    margin-top: 20px;
+    text-align: center;
+
+    p {
+      margin-top: 20px;
+      font-weight: $weight-Bold;
+
+      &:nth-child(1) {
+        color: $color-text__yellow--pale;
+      }
+
+      &:nth-child(2) {
+        color: $color-text__green;
+      }
+    }
+  }
+
+  .modal__background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
