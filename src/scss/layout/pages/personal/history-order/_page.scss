@@ -1,0 +1,13 @@
+#pp-history-order {
+  .page__grid {
+    @include breakpoint($breakpoint-desktop) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .page__side {
+    @include breakpoint($breakpoint-desktop) {
+      display: none;
+    }
+  }
+}

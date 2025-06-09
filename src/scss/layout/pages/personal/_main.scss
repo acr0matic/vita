@@ -1,6 +1,8 @@
 @import "home/content";
 
 @import "history-product/content";
+
+@import "history-order/page";
 @import "history-order/content";
 
 @import "profile/content";
@@ -11,6 +13,10 @@
 
 [id^="pp-"] {
   .page__background {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
     position: absolute;
     z-index: -1;
     top: 89px;

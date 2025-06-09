@@ -2,6 +2,10 @@
   margin-top: 0;
 
   .content {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 20px;
+    }
+
     position: relative;
     overflow: hidden;
 
@@ -17,12 +21,22 @@
     }
 
     &__action {
+      @include breakpoint($breakpoint-tablet) {
+        flex-direction: column;
+      }
+
       display: flex;
       gap: 10px;
       align-items: center;
       justify-content: center;
 
       margin-bottom: 10px;
+
+      .button {
+        @include breakpoint($breakpoint-tablet) {
+          width: 100%;
+        }
+      }
 
       .button.is-active {
         background-color: $palette-black;

@@ -17,6 +17,12 @@ body.page {
     overflow: clip;
   }
 
+  .page__side {
+    @include breakpoint($breakpoint-notebook) {
+      display: none;
+    }
+  }
+
   .page__header {
     .section__header {
       margin-bottom: 30px;
@@ -24,11 +30,14 @@ body.page {
   }
 
   .page__grid {
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: 350px 1fr;
     gap: 20px;
     margin-top: 40px;
-    margin-bottom: 100px;
   }
 
   .page__text {

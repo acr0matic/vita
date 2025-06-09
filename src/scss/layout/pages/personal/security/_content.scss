@@ -1,5 +1,9 @@
 #pp-security-content {
   .content {
+    @include breakpoint($breakpoint-tablet) {
+      padding: 20px;
+    }
+
     position: relative;
     overflow: hidden;
     padding: 40px;
@@ -7,6 +11,16 @@
     background-color: $palette-yellow--pale;
 
     &__form {
+      @include breakpoint($breakpoint-notebook) {
+        max-width: 320px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        max-width: 100%;
+      }
+
+      position: relative;
+      z-index: 2;
       max-width: 600px;
 
       .form__privacy {
@@ -14,10 +28,21 @@
       }
 
       .form__action {
+        @include breakpoint($breakpoint-tablet) {
+          flex-direction: column;
+          gap: 8px;
+        }
+
         display: flex;
         gap: 20px;
         align-items: center;
         margin-top: 20px;
+      }
+
+      .button {
+        @include breakpoint($breakpoint-tablet) {
+          width: 100%;
+        }
       }
 
       .button-outline {
@@ -30,6 +55,14 @@
     }
 
     &__logo {
+      @include breakpoint($breakpoint-notebook) {
+        top: 40px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
       position: absolute;
       top: -12px;
       right: -35px;

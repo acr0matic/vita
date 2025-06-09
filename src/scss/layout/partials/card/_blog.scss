@@ -1,5 +1,8 @@
 .card-blog {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &__picture {
     @include breakpoint($breakpoint-desktop) {

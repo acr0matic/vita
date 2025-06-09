@@ -1,12 +1,26 @@
 #pp-home-content {
   .content {
     &__grid {
+      @include breakpoint($breakpoint-laptop) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        grid-template-columns: 1fr;
+      }
+
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 20px;
     }
 
     &__card {
+      @include breakpoint($breakpoint-tablet) {
+        align-items: flex-start;
+        min-height: 152px;
+        padding: 38px 30px;
+      }
+
       position: relative;
 
       display: flex;
@@ -40,6 +54,11 @@
     }
 
     &__title {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: 20px;
+        text-align: left;
+      }
+
       font-size: 28px;
       font-family: $font-heading;
       text-align: center;
@@ -53,6 +72,16 @@
     }
 
     &__background {
+      @include breakpoint($breakpoint-tablet) {
+        top: 50%;
+        right: 40px;
+        left: initial;
+        width: 120px;
+        height: 120px;
+
+        transform: translateY(-50%);
+      }
+
       position: absolute;
       z-index: -1;
       bottom: -32px;

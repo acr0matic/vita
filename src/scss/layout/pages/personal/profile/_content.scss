@@ -6,13 +6,15 @@
     border-radius: var(--border-radius-big);
     background-color: $palette-yellow--pale;
 
+    &__wrapper {
+      position: relative;
+      z-index: 2;
+    }
+
     &__header {
       margin-bottom: 20px;
       font-weight: $weight-Bold;
       font-size: var(--font-text-large);
-    }
-
-    &__info {
     }
 
     &__block {
@@ -37,6 +39,10 @@
     }
 
     &__logo {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
       position: absolute;
       top: 50%;
       right: -12px;

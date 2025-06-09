@@ -11,7 +11,7 @@ if (authModal) {
   const slider = new Swiper('#modal-auth .swiper', {
     modules: [EffectFade],
 
-    speed: 400,
+    speed: 200,
     spaceBetween: 100,
     slidesPerView: 1,
     autoHeight: true,

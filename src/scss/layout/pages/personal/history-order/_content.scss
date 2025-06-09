@@ -1,13 +1,22 @@
 #pp-history-order-content {
   .content {
     &__item {
+      @include breakpoint($breakpoint-desktop) {
+        grid-template-columns: 200px 430px 160px 1fr;
+      }
+
+      @include breakpoint($breakpoint-notebook) {
+        grid-template-columns: 1fr;
+      }
+
       display: grid;
-      grid-template-columns: 260px 430px auto 1fr;
+      grid-template-columns: 260px 430px 180px 1fr;
 
       width: 100%;
       padding: 20px;
       border: 1px solid #e2d2c5;
       border-radius: var(--border-radius-big);
+      background-color: $palette-white;
 
       &:not(:last-child) {
         margin-bottom: 20px;
@@ -53,6 +62,10 @@
     }
 
     &__grid {
+      @include breakpoint($breakpoint-desktop) {
+        margin-top: 16px;
+      }
+
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 10px;
@@ -76,23 +89,35 @@
     }
 
     &__price {
+      @include breakpoint($breakpoint-desktop) {
+        justify-content: flex-start;
+        margin-top: 16px;
+        text-align: left;
+      }
+
       display: flex;
       align-items: center;
       justify-content: center;
 
-      margin-left: 52px;
-
       font-weight: $weight-Bold;
       font-size: var(--font-text-big);
+      text-align: center;
     }
 
     &__action {
+      @include breakpoint($breakpoint-desktop) {
+        align-items: flex-start;
+        margin-top: 16px;
+      }
+
+      gap: 8px;
       align-items: flex-end;
     }
 
     &__status,
     &__repeat {
       display: inline-flex;
+      gap: 16px;
       align-items: center;
       justify-content: center;
     }
@@ -100,7 +125,6 @@
     &__status {
       gap: 8px;
       min-width: 156px;
-      margin-bottom: 16px;
       padding: 10px 20px;
       border-radius: var(--border-radius);
 
