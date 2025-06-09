@@ -7,6 +7,12 @@
       justify-content: center;
 
       margin-bottom: 50px;
+
+      .is-active {
+        background-color: $palette-black;
+        color: $color-text__white;
+        pointer-events: none;
+      }
     }
 
     &__content {

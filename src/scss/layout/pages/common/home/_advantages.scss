@@ -12,6 +12,11 @@
       gap: 80px;
     }
 
+    @include breakpoint($breakpoint-notebook) {
+      grid-template-columns: 360px 1fr;
+      gap: 60px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
       grid-template-columns: 1fr;
       gap: 32px;
@@ -23,12 +28,20 @@
     align-items: center;
 
     .section__title {
+      @include breakpoint($breakpoint-tablet) {
+        text-align: center;
+      }
+
       text-align: left;
     }
 
     &__logo {
       @include breakpoint($breakpoint-laptop) {
         width: 320px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
       }
 
       position: absolute;
@@ -48,6 +61,11 @@
       @include breakpoint($breakpoint-laptop) {
         width: 720px;
         height: 540px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        width: 540px;
+        height: 320px;
       }
 
       position: absolute;

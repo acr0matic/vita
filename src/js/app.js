@@ -25,5 +25,6 @@ import './component/accordion';
 import './component/form';
 import './component/submenu';
 import './component/gallery';
+import './component/tabs';
 
 import './utils/video-optimization';
