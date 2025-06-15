@@ -1,4 +1,12 @@
 .button-primary {
   background-color: $palette-black;
   color: $color-text__white;
+
+  &--alt {
+    background-image: $gradient;
+
+    &::after {
+      background: $palette-black;
+    }
+  }
 }

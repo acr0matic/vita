@@ -1,0 +1,276 @@
+.cart {
+  position: fixed;
+  z-index: $z-index-menu;
+  inset: 0;
+
+  height: 100dvh;
+
+  visibility: hidden;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color: #161806, $alpha: 0.62);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: $transition-time ease 0.4s;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+
+    padding: 60px 30px 0;
+
+    background-color: $palette-white;
+    transform: translateX(100%);
+    transition: 0.6s ease;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 64px;
+    height: 64px;
+
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        svg {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    svg {
+      transition: $transition-time ease;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin-bottom: 16px;
+
+    span {
+      margin-left: auto;
+
+      color: #9aa255;
+      font-weight: $weight-Bold;
+    }
+  }
+
+  &__grid {
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 30px;
+    align-items: start;
+
+    margin-top: 32px;
+
+    & > .cart__action {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+
+      margin-left: auto;
+      padding: 14px 30px;
+      border: 1px solid #dfd5ba;
+      border-radius: var(--border-radius);
+
+      color: #a29885;
+      font-weight: $weight-Bold;
+      font-size: var(--font-text-small);
+
+      line-height: 1;
+      cursor: pointer;
+      transition: $transition-time ease;
+
+      @media (hover: hover) {
+        &:hover {
+          border-color: $palette-black;
+          background-color: $palette-black;
+          color: $color-text__white;
+        }
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__order {
+    .cart__action {
+      margin-top: 16px;
+      text-align: right;
+    }
+  }
+
+  &__promo {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 10px;
+
+    margin-bottom: 30px;
+  }
+
+  &__summary {
+    div {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+
+      min-height: 42px;
+      padding: 0 10px;
+
+      border-radius: var(--border-radius);
+      background-color: $palette-yellow--pale;
+
+      p:nth-child(2) {
+        font-weight: $weight-Medium;
+        font-size: 18px;
+      }
+
+      b {
+        font-size: 24px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .cart__item {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 0.6s ease;
+    transition-delay: 0s;
+  }
+
+  &.is-open {
+    visibility: visible;
+
+    .cart__item {
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          transition-delay: 0.8s + calc($i / 10);
+        }
+      }
+
+      opacity: 1;
+      transform: none;
+    }
+
+    .cart__overlay {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s;
+    }
+
+    .cart__wrapper {
+      transform: none;
+      transition-delay: 0.4s;
+    }
+  }
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dfd5ba;
+  }
+
+  &__wrapper {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: 240px auto auto auto;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 140px;
+    aspect-ratio: 1 / 1;
+  }
+
+  &__info {
+    & > p {
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+    }
+  }
+
+  &__count {
+    margin-left: 64px;
+  }
+
+  &__action {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    margin-top: 16px;
+
+    color: #cdc9c1;
+
+    font-weight: $weight-Bold;
+    font-size: var(--font-text-small);
+
+    cursor: pointer;
+    transition: $transition-time ease;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $link-color;
+      }
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__price {
+    font-weight: $weight-SemiBold;
+    font-size: 22px;
+    text-align: center;
+
+    &--old {
+      color: $color-text__gray;
+      font-weight: $weight-Bold;
+      font-size: var(--font-text-regular);
+      text-decoration: line-through;
+    }
+  }
+}

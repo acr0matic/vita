@@ -15,6 +15,7 @@ import './layout/common';
 import './layout/header';
 import './layout/footer';
 import './layout/menu';
+import './layout/cart';
 
 import './layout/page/home';
 import './layout/page/single-blog';
